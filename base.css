@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Lato;
+    src: url(https://moonsites.github.io/fonts/Lato-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(https://moonsites.github.io/fonts/OpenSans-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #0c1a28;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+
+header {
+    background: #0c1a28;
+    position: fixed;
+    top: 0; 
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #999;
+}
+
+header img {
+    height: 50px;
+    left: 60px;
+    top: 25px;
+    position: absolute;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+a, a:link,a:visited {
+  color: #fff;
+}
+a:hover, nav a.active:hover {
+  border-bottom: 4px solid orange;
+}
+a:active {
+  color: #fff;
+  border-bottom: 4px solid green;
+}
+
+nav a {
+    padding: 14px;
+    margin: 0 8px;
+    text-decoration: none;
+    border: 1px solid #555;
+    -webkit-transition: all .2s linear;
+       -moz-transition: all .2s linear;
+        -ms-transition: all .2s linear;
+         -o-transition: all .2s linear;
+            transition: all .2s linear;
+}
+
+nav a.active {
+    border-bottom: 4px solid green;
+}
+
+
+
+footer {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    background: #000;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    header {
+        height: 70px;
+    }
+
+    header img {
+        left: 20px;
+        top: 0;
+        height: 30px;
+    }
+
+    nav {
+        margin-top: 30px;
+        height: fit-content;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 4px;
+        margin: 0 4px;
+    }
+}

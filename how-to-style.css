@@ -1,0 +1,70 @@
+.content {
+	padding: 100px 60px;
+}
+
+.data-content {
+	margin-bottom: 50px;
+}
+
+.data-block {
+	margin-top: 40px;
+	width: 65%;
+}
+
+h2 {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 100px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	background: #0c1a28;
+}
+
+.data-block p {
+    white-space: pre-line;
+    margin-top: 20px;
+    line-height: 150%;
+}
+
+.data-block p.hint {
+	font-family: 'Lato';
+	padding-left: 16px;
+	border-left: 5px solid #aaa;
+}
+
+.data-block p.warn {
+	font-weight: 700;
+    text-decoration: underline;
+}
+
+.data-block span {
+	font-family: 'Lato';
+	font-size: 1.1rem;
+}
+
+.data-block i {
+	font-family: 'Lato';
+    color: #ccc;
+}
+
+ul, ol {
+    margin-top: 20px;
+    line-height: 150%;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    
+    .content {
+    	padding: 70px 20px;
+    }
+
+    .data-block {
+        width: 90%;
+    }
+
+    h2 {
+    	top: 70px;
+    }
+}
