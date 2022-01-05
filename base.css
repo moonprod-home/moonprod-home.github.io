@@ -13,8 +13,8 @@
 }
 
 html {
-    background: #0c1a28;
-    color: #FFF;
+    background: #11183C;
+    color: #fcfcfc;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
 }
@@ -22,7 +22,7 @@ html {
 
 
 header {
-    background: #0c1a28;
+    background: #11183C;
     position: fixed;
     top: 0; 
     height: 100px;
@@ -30,7 +30,7 @@ header {
     border-bottom: 1px solid #999;
 }
 
-header img {
+header #logo {
     height: 50px;
     left: 60px;
     top: 25px;
@@ -46,8 +46,19 @@ nav {
             justify-content: center;
 }
 
+.nav-socials {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+}
+
+.nav-socials img {
+    height: 40px;
+    cursor: pointer;
+}
+
 a, a:link,a:visited {
-  color: #fff;
+  color: #fcfcfc;
 }
 a:hover, nav a.active:hover {
   border-bottom: 4px solid orange;

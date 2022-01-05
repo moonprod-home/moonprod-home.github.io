@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Частые вопросы</title>
+	<title>Частые вопросы | MOON Home</title>
 	<link rel="stylesheet" href="base.css">
 	<style>
 		.content {
@@ -46,12 +46,34 @@
 	</div>
 
 	<header>
-		<img src="img/moon-logo.png" alt="Логотип">
+		<img id="logo" src="img/moon-logo.png" alt="Логотип">
 		<nav>
 			<a href="index.html">Главная</a>
-			<a href="how-to.html">Большая инструкция</a>
-			<a href="#" class="active">Частые вопросы</a>
+			<a href="how-to.html">Инструкция</a>
+			<a href="faq.html" class="active">Частые вопросы</a>
 		</nav>
+
+		<div class="nav-socials">
+			<img src="img/socials_tg.png" onclick="goto('tg')" alt="">
+			<img src="img/socials_wa.png" onclick="goto('wa')" alt="">
+		</div>
+		<script>
+			function goto(where) {
+			var link = "";
+			switch (where) {
+				case "tg":
+					link = "https://t.me/moonhomej";
+					break;
+				case "wa":
+					link = "https://wa.me/79054782407";
+					break;
+				default:
+					return;
+					break;
+			}
+			window.open(link, "_blank");
+		}
+		</script>
 	</header>
 
 	<footer>Moon Production. Copyright 2019-2021</footer>
