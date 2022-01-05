@@ -102,10 +102,19 @@ footer {
         height: 70px;
     }
 
-    header img {
+    header #logo {
         left: 20px;
         top: 0;
         height: 30px;
+    }
+
+    .nav-socials {
+        top: 0;
+        right: 20px;
+    }
+
+    .nav-socials img {
+        height: 28px;
     }
 
     nav {
