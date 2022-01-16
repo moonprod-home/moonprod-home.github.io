@@ -5,24 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Частые вопросы | MOON Home</title>
 	<link rel="stylesheet" href="base.css">
-	<style>
-		.content {
-			height: 80vh;
-			display: flex;
-			margin-top: 100px;
-			-webkit-align-items: center;
-			        align-items: center;
-			-webkit-justify-content: center;
-			        justify-content: center;
-			-webkit-flex-direction: column;
-			    -ms-flex-direction: column;
-			        flex-direction: column;
-		}
-
-		.subsub {
-			margin-top: 30px;
-		}
-	</style>
+	<link rel="stylesheet" href="faq.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -33,16 +16,48 @@
 </head>
 <body>
 	<div class="content">
-		<p>Информация скоро появится</p>
+		<h1>Частые вопросы</h1>
 
-		<div>
-			<p class="subsub">Связаться с продавцом:</p>
-			<ul>
-				<li><a target="_blank" href="tel:+79054782407">Позвонить</a></li>
-				<li><a target="_blank" href="https://wa.me/+79054782407">Написать на WhatsApp</a></li>
-				<li><a target="_blank" href="https://t.me/moonhomeJ">Написать в Telegram</a></li>
-			</ul>
+		<div class="data-block">
+			<div class="text">
+				<h2>Как срочно включить котёл в обход термостата?</h2>
+				<p class="answer">Нажать на разъём сзади термостата, вынуть из него провод и скрутить жилы. Выключать котёл из сети при этом необязательно — провод не под напряжением.</p>
+			</div>
+			<img src="img/icon_switch.svg" alt="">
 		</div>
+
+		<div class="data-block">
+			<div class="text">
+				<h2>Температура упала, а котёл не включился.</h2>
+				<p class="answer">Как только температура упадёт на полградуса ниже заданной, термостат включит котёл.</p>
+			</div>
+			<img src="img/t2.svg" alt="">
+		</div>
+
+		<div class="data-block">
+			<div class="text">
+				<h2>Нажал "Включить нагрев" на сайте, а котёл не включился.</h2>
+				<p class="answer">Котёл изменит своё состояние в течение минуты после внесения изменений на сайте.</p>
+			</div>
+			<img src="img/timer.svg" alt="">
+		</div>
+
+		<div class="data-block">
+			<div class="text">
+				<h2>Не загружается сайт, когда я не дома.</h2>
+				<p class="answer">Термостат доступен только в Вашей домашней сети.</p>
+			</div>
+			<img src="img/icon_router.png" alt="">
+		</div>
+
+		<!-- <div class="data-block">
+			<div class="text">
+				<h2></h2>
+				<p class="answer"></p>
+			</div>
+			<img src="img/t_Rh.png" alt="">
+		</div> -->
+
 	</div>
 
 	<header>
