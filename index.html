@@ -5,24 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Moon Production | MOON Home</title>
 	<link rel="stylesheet" href="base.css">
-	<style>
-		.content {
-			height: 80vh;
-			display: flex;
-			margin-top: 100px;
-			-webkit-align-items: center;
-			        align-items: center;
-			-webkit-justify-content: center;
-			        justify-content: center;
-			-webkit-flex-direction: column;
-			    -ms-flex-direction: column;
-			        flex-direction: column;
-		}
+	<link rel="stylesheet" href="index.css">
 
-		.subsub {
-			margin-top: 30px;
-		}
-	</style>
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -32,21 +16,119 @@
 	<meta name="theme-color" content="#283542">
 </head>
 <body>
-	<div class="content">
-		<p>Информация скоро появится</p>
 
-		<div>
-			<p class="subsub">Связаться с продавцом:</p>
-			<ul>
-				<li><a target="_blank" href="tel:+79054782407">Позвонить</a></li>
-				<li><a target="_blank" href="https://wa.me/+79054782407">Написать на WhatsApp</a></li>
-				<li><a target="_blank" href="https://t.me/moonhomeJ">Написать в Telegram</a></li>
-			</ul>
+	<div class="content">
+		<div class="data-block">
+			<h1>Термостат</h1>
+			<p class="subtitle">Для Вашего Котла</p>
+
+			<div class="main-block">
+				
+				<div class="text-left">
+					<h3 id="no-battery">Без батареек</h3>
+					<p class="main-subtitle">Питается от USB 5 вольт</p>
+
+					<h3 class="main-mt-h3">Управление из браузера</h3>
+					<p class="main-subtitle main-mb-subtitle">С любого устройства</p>
+
+					<h3>Гибкие настройки</h3>
+					<p class="main-subtitle">До 7 расписаний</p>
+				</div>
+
+				<!-- <div class="image-container"> -->
+					<img src="img/thermo_front.png" alt="Термостат. Вид спереди">
+				<!-- </div> -->
+
+				<div class="text-right">
+					<h3>Датчик снаружи</h3>
+					<p class="main-subtitle">Чтобы измерять Точно</p>
+
+					<h3 class="main-mt-h3">Температура и Влажность</h3>
+					<p class="main-subtitle main-mb-subtitle">Два в одном</p>
+					
+					<h3>Комфорт и Безопасность</h3>
+					<p class="main-subtitle">Полностью под Вашим контролем</p>
+				</div>
+
+			</div>
+
+		</div>
+		<img src="img/divider.png" alt="Разделитель" class="divider">
+
+		<div class="data-block">
+			<h2>Простое подключение</h2>
+			<div class="second-block">
+				
+				<p class="block-text">Нажмите на разъём, чтобы вставить или извлечь провод от котла.
+
+Подскажем, как подключить термостат конкретно к Вашей модели котла.
+
+По Ростову-на-Дону и соседним городам бесплатно доставим и подключим термостат к котлу.</p>
+
+				<div class="image-container">
+					<p class="second-hint">Термостат можно закрепить на стене</p>
+					<img class="second-hint" src="img/selector2.png" alt="Линия">
+					<img id="thermo-back" src="img/thermo_back.png" alt="Термостат. Вид сзади">
+				</div>
+
+			</div>
+
+		</div>
+		<img src="img/divider.png" alt="Разделитель" class="divider">
+		
+		<div class="data-block">
+			<h2>Связь без проводов</h2>
+			<div class="text-image-block">
+				<p>Термостаты MOON Home умеют работать вместе, и в этом сила. Вы хотите поддерживать температуру в спальне, для этого поставьте один термостат в спальне, а второй установите на кухне и подключите к котлу. Всё. Не надо тянуть провод от котла в другую комнату.
+</p>
+				<img src="img/icon_thermos_big.png" alt="Термостаты">
+			</div>
+		</div>
+		<img src="img/divider.png" alt="Разделитель" class="divider">
+
+		<div class="data-block">
+			<h2>Быстрая настройка</h2>
+			<div class="text-image-block">
+				<ul>
+					<li>Доступ из браузера;</li>
+					<li>Без установки дополнительных программ;</li>
+					<li>Без регистрации и ввода личных данных;</li>
+					<li>Доступ только в домашней сети;</li>
+					<li>Для работы не нужен интернет;<br></li>
+					<li>Три температурных режима;</li>
+					<li>До семи расписаний;</li>
+					<li>Данные со всех термостатов на одном экране.</li>
+				</ul>
+				<img src="img/mockup.png" alt="">
+			</div>
+		</div>
+		<img src="img/divider.png" alt="Разделитель" class="divider">
+
+		<div class="data-block">
+			<h2>Заказать</h2>
+			<div class="text-image-block">
+				<div class="order-block">
+					<p>Цена:
+
+1шт - <span>2900руб</span>
+2шт - <span>5000руб</span>
+
+Бесплатная доставка и установка по Ростову‑на‑Дону и соседним городам.
+
+Свяжитесь с нами для заказа:</p>
+
+					<div class="buttons-block">
+						<button style="background-color: #009CB8;" onclick="goto('tg')"><img src="img/socials_tg.png" alt="Telegram">Telegram</button>
+						<button style="background-color: #00B845;"onclick="goto('wa')"><img src="img/socials_wa.png" alt="WhatsApp">WhatsApp</button>
+					</div>
+				</div>
+				<img class="order" src="img/thermo_front.png" alt="Термостат. Вид спереди">
+			</div>
 		</div>
 	</div>
-
+	
 	<header>
-		<img id="logo" src="img/moon-logo.png" alt="Логотип">
+		<img id="logo" src="img/moon-logo_small.png" alt="Логотип">
 		<nav>
 			<a href="index.html" class="active">Главная</a>
 			<a href="how-to.html">Инструкция</a>
@@ -54,8 +136,8 @@
 		</nav>
 
 		<div class="nav-socials">
-			<img src="img/socials_tg.png" onclick="goto('tg')" alt="">
-			<img src="img/socials_wa.png" onclick="goto('wa')" alt="">
+			<img src="img/socials_tg.png" onclick="goto('tg')" alt="Telegram">
+			<img src="img/socials_wa.png" onclick="goto('wa')" alt="WhatsApp">
 		</div>
 		<script>
 			function goto(where) {

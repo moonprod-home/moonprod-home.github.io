@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
 @font-face {
-    font-family: Lato;
+    font-family: 'Lato';
     src: url(https://moonsites.github.io/fonts/Lato-Regular.ttf) format('truetype');
 }
 @font-face {
@@ -17,6 +19,7 @@ html {
     color: #fafafa;
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
+    font-size: 14px;
 }
 
 
@@ -25,20 +28,19 @@ header {
     background: #11183C;
     position: fixed;
     top: 0; 
-    height: 100px;
+    height: 60px;
     width: 100%;
-    border-bottom: 1px solid #999;
 }
 
 header #logo {
-    height: 50px;
+    height: 40px;
     left: 60px;
-    top: 25px;
+    top: 10px;
     position: absolute;
 }
 
 nav {
-    height: 100px;
+    height: 60px;
     display: flex;
     -webkit-align-items: center;
             align-items: center;
@@ -48,12 +50,12 @@ nav {
 
 .nav-socials {
     position: absolute;
-    top: 30px;
+    top: 15px;
     right: 60px;
 }
 
 .nav-socials img {
-    height: 40px;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -61,27 +63,35 @@ a, a:link,a:visited {
   color: #fcfcfc;
 }
 a:hover, nav a.active:hover {
-  border-bottom: 4px solid orange;
+  -webkit-box-shadow: orange 0 3px 0 0;
+          box-shadow: orange 0 3px 0 0;
 }
-a:active {
+a:active, nav a.active:active {
   color: #fff;
-  border-bottom: 4px solid green;
+  -webkit-box-shadow: green 0 3px 0 0;
+          box-shadow: green 0 3px 0 0;
 }
 
 nav a {
-    padding: 14px;
-    margin: 0 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    margin: 0 14px;
     text-decoration: none;
-    border: 1px solid #555;
     -webkit-transition: all .2s linear;
        -moz-transition: all .2s linear;
         -ms-transition: all .2s linear;
          -o-transition: all .2s linear;
             transition: all .2s linear;
+    
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 1rem;
 }
 
 nav a.active {
-    border-bottom: 4px solid green;
+    text-decoration: underline;
 }
 
 
@@ -120,6 +130,9 @@ footer {
     nav {
         margin-top: 30px;
         height: fit-content;
+        justify-content: space-between;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     nav a {

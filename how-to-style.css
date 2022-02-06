@@ -1,5 +1,5 @@
 .content {
-	padding: 100px 60px;
+	padding: 60px;
 }
 
 .data-content {
@@ -7,7 +7,7 @@
 }
 
 .data-block {
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .with-pic {
@@ -24,7 +24,7 @@
 h2 {
 	position: -webkit-sticky;
 	position: sticky;
-	top: 100px;
+	top: 60px;
 	background: #11183C;
 	padding: 40px 0 10px 0;
 }
@@ -134,7 +134,7 @@ ol.instr img, img.instr {
 @media screen and (max-width: 800px) {
     
     .content {
-    	padding: 70px 20px;
+    	padding: 60px 20px;
     }
 
     .data-block p {
@@ -142,7 +142,7 @@ ol.instr img, img.instr {
     }
 
     h2 {
-    	top: 70px;
+    	top: 60px;
     }
 
 	.with-pic img {

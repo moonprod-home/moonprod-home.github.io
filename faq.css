@@ -1,6 +1,5 @@
 .content {
-	padding: 100px 60px;
-	
+	padding: 60px;
 }
 
 h1 {
@@ -9,7 +8,7 @@ h1 {
 
 .data-block {
 	display: flex;
-	margin-top: 40px;
+	margin-top: 50px;
 }
 
 .text {
@@ -41,7 +40,29 @@ h1 {
 }
 
 .data-block img {
-	height: 70px;
+    height: 100%;
     margin-left: auto;
-    margin-top: 20px;
+    max-width: 15%;
+    width: 70px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .content {
+    	padding: 60px 20px;
+    }
+
+    .text h2::before { display: none; }
+
+    .text {
+    	margin-left: 0;
+		width: 80%;
+    }
+
+	.text .answer {
+    	margin-top: 6px;
+    }
+
+
 }
